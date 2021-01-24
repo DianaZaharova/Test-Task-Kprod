@@ -1,4 +1,5 @@
 # Тестовое задание для Digital-агенства Kprod
+Ссылка на проект: https://dianazaharova.github.io/Test-Task-Kprod/
 
 Требования 
 
@@ -6,4 +7,3 @@
   - использовать БЭМ
   
 Ссылка на макет: https://vk.cc/bXnJ89
-Ссылка на проект: https://dianazaharova.github.io/Test-Task-Kprod/
