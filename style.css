@@ -1,0 +1,253 @@
+body {
+  margin: 0 auto;
+  width: 61%;
+  padding-top: 7%;
+}
+
+.header__line {
+  width: 50px;
+  height: 2px;
+  background-color: #3685EE;
+  margin-bottom: 1.2%;
+}
+
+.header__title {
+  font: 2.240vw/2.656vw gilroy-regular, Helvetica, sans-serif;
+  margin: 0 0 4.3% 0;
+  color: #454750;
+  letter-spacing: 1px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.block {
+  width: 19.271vw;
+  height: 19.271vw;
+  margin: 0 1.563vw 1.563vw 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  position: relative;
+}
+
+.block::after {
+  display: block;
+  content: '';
+  width: 0%;
+  top: 100%;
+  left: 50%;
+  height: 2px;
+  background: #3685EE;
+  position: absolute;
+  transition: width 0.2s ease-out;
+  transform: translateX(-50%);
+}
+
+.block:hover::after {
+  width: 100%;
+}
+
+.block:hover .block__description {
+  color: #3685EE;
+}
+
+.block:hover .loupe {
+  visibility: visible;
+}
+
+.loupe {
+  background: url(./img/loupe-icon.svg) no-repeat;
+  visibility: hidden;
+  width: 77px;
+  height: 74px;
+  position: absolute;
+  top: 23%;
+  left: 37%;
+  cursor: pointer;
+}
+
+.block_none {
+  display: block;
+}
+
+.block__img {
+  width: 100%;
+  height: 14.219vw;
+}
+
+.block__description {
+  font: 0.833vw/1.458vw gilroy-bold, Helvetica, sans-serif;
+  white-space: pre-line;
+  padding: 5% 0 0 8%;
+  color: #454750;
+  transition: color 0.2s ease-out;
+}
+
+.storage-img {
+  background: url(./img/storage.png) no-repeat;
+  background-size: cover;
+}
+
+.storage1-img {
+  background: url(./img/storage1.png) no-repeat;
+  background-size: cover;
+}
+
+.kitchen-img {
+  background: url(./img/kitchen.png) no-repeat;
+  background-size: cover;
+}
+
+.bedroom-img {
+  background: url(./img/bedroom.png) no-repeat;
+  background-size: cover;
+}
+
+.office-img {
+  background: url(./img/office.png) no-repeat;
+  background-size: cover;
+}
+
+.office1-img {
+  background: url(./img/office1.png) no-repeat;
+  background-size: cover;
+}
+
+/* 320 */
+
+@media only screen and (max-width: 500px) { 
+  body {
+    width: 87%;
+    padding-top: 20%;
+  }
+
+  .header__line {
+    width: 11.250vw;
+    margin-bottom: 4.2%;
+  }
+  
+  .header__title {
+    font: 8.750vw/11.250vw gilroy-regular, Helvetica, sans-serif;
+    margin: 0 0 11% 0;
+  }
+  
+  .main {
+    grid-template-columns: 1fr;
+    margin-bottom: 8.7vw;
+  }
+  
+  .block {
+    width: 87.271vw;
+    height: 87.271vw;
+    margin: 0 2.563vw 7.4vw 0;
+  }
+  
+  .block__img {
+    height: 64.7vw;
+  }
+  
+  .block__description {
+    font: 5vw/8.750vw gilroy-bold, Helvetica, sans-serif;
+  }
+
+  .block_none {
+    display: none;
+  }
+}
+
+/* 768 */
+
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
+  body {
+    width: 93.5%;
+    padding-top: 10.7%;
+  }
+
+  .header__line {
+    margin-bottom: 2%;
+  }
+
+  .header__title {
+    font: 5.599vw/6.641vw gilroy-regular, Helvetica, sans-serif;
+    margin: 0 0 6% 0;
+  }
+  
+  .main {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3.255vw;
+  }
+  
+  .block {
+    width: 45vw;
+    height: 45vw;
+    margin: 0 3.6vw 5.9vw 0;
+  }
+  
+  .block__img {
+    height: 33vw;
+  }
+  
+  .block__description {
+    font: 2.083vw/3.646vw gilroy-bold, Helvetica, sans-serif;
+    padding: 5% 0 0 9%;
+  }
+
+  .kitchen-img {
+    background: url(./img/bedroom.png) no-repeat;
+    background-size: cover;
+  }
+
+  .bedroom-img {
+    background: url(./img/kitchen.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* 1024 */
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  body {
+    width: 75%;
+    padding-top: 11.2%;
+  }
+  
+  .header__line {
+    margin-bottom: 2%;
+  }
+  
+  .header__title {
+    font: 4.199vw/4.980vw gilroy-regular, Helvetica, sans-serif;
+    margin: 0 0 6.5% 0;
+  }
+  
+  .main {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9.7vw;
+  }
+  
+  .block {
+    width: 36.271vw;
+    height: 36.271vw;
+    margin: 0 2.563vw 4.7vw 0;
+  }
+  
+  .block__img {
+    height: 26.7vw;
+  }
+  
+  .block__description {
+    font: 1.563vw/2.734vw gilroy-bold, Helvetica, sans-serif;
+  }
+
+  .kitchen-img {
+    background: url(./img/bedroom.png) no-repeat;
+    background-size: cover;
+  }
+
+  .bedroom-img {
+    background: url(./img/kitchen.png) no-repeat;
+    background-size: cover;
+  }
+}
